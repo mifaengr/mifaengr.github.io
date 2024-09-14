@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>KIRANA'S FRUITSTAND</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.min.js"></script>
+
+    <style>
+        .modal-body {
+            height: 450px;
+            overflow: hidden;
+        }
+
+        .modal-body:hover {
+            overflow-y: auto;
+        }
+
+        .btn-default {
+            border: 1px solid whitesmoke;
+        }
+
+        .btn-default:hover {
+            background-color: whitesmoke;
+        }
+
+        #shopping-list{
+        }
+    </style>
+</head>
+
+<body class="">
+
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="text-center">KIRANA'S FRUITSTAND</h1>
+        </div>
+    </div>
+    <div class="container-fluid" style="width: 100%;">
+        <div class="row" style="width: 100%;">
+            <div class="col-sm-9">
+                <div class="row" style="padding-top: 10px;">
+                    <div class="d-grid gap-2 d-md-block">
+                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#productModal">
+                            <i class="fa fa-plus"></i>Add Product
+                        </button>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 5px;">
+                    <div class="card-header card-title">
+                        <h4 class="card-title">Shopping List</h1>
+                    </div>
+
+                    <div class="container" id="shopping-list" style="min-height: 400px;">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <h1>Submain Content</h1>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <h1>Right Content</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalLabel">Products</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img src="images/apple.jpg" class="card-img-top img-fluid" alt="Apple">
+                                <div class="card-body">
+                                    <h6 class="card-title">Apple</h6>
+                                    <div class="text-center">
+                                        <button id="btn-add-apple" class="btn btn-default btn-sm text-center">Add to
+                                            shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img src="images/avocado.jpg" class="card-img-top img-fluid" alt="Avocado">
+                                <div class="card-body">
+                                    <h6 class="card-title">Avocado</h6>
+                                    <div class="text-center">
+                                        <button id="btn-add-avocado" class="btn btn-default btn-sm text-center">Add to
+                                            shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img src="images/banana.jpg" class="card-img-top img-fluid" alt="Banana">
+                                <div class="card-body">
+                                    <h6 class="card-title">Banana</h6>
+                                    <div class="text-center">
+                                        <button id="btn-add-banana" class="btn btn-default btn-sm text-center">Add to
+                                            shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img src="images/cabbage.jpg" class="card-img-top img-fluid" alt="Cabbage">
+                                <div class="card-body">
+                                    <h6 class="card-title">Cabbage</h6>
+                                    <div class="text-center">
+                                        <button id="btn-add-cabbage" class="btn btn-default btn-sm text-center">Add to
+                                            shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img src="images/cocumber.jpg" class="card-img-top img-fluid" alt="Cocumber">
+                                <div class="card-body">
+                                    <h6 class="card-title">Cocumber</h6>
+                                    <div class="text-center">
+                                        <button id="btn-add-cocumber" class="btn btn-default btn-sm text-center">Add to
+                                            shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img src="images/onion.jpg" class="card-img-top img-fluid" alt="Onion">
+                                <div class="card-body">
+                                    <h6 class="card-title">Onion</h6>
+                                    <div class="text-center">
+                                        <button id="btn-add-onion" class="btn btn-default btn-sm text-center">Add to
+                                            shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img src="images/pineapple.jpg" class="card-img-top img-fluid" alt="Pineapple">
+                                <div class="card-body">
+                                    <h6 class="card-title">Pineapple</h6>
+                                    <div class="text-center">
+                                        <button id="btn-add-pineapple" class="btn btn-default btn-sm text-center">Add to
+                                            shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img src="images/pomegranate.jpg" class="card-img-top img-fluid" alt="Pomegranate">
+                                <div class="card-body">
+                                    <h6 class="card-title">Pomegranate</h6>
+                                    <div class="text-center">
+                                        <button id="btn-add-pomegranate" class="btn btn-default btn-sm text-center">Add
+                                            to shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img src="images/potato.jpg" class="card-img-top img-fluid" alt="Potato">
+                                <div class="card-body">
+                                    <h6 class="card-title">Potato</h6>
+                                    <div class="text-center">
+                                        <button id="btn-add-potato" class="btn btn-default btn-sm text-center">Add to
+                                            shop</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add New Product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="fruitsadded.js"></script>
+</body>
+
+</html>
